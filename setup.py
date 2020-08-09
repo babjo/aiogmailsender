@@ -5,7 +5,7 @@ with open('README.rst', 'r') as fh:
 
 setuptools.setup(
     name='aiogmailsender',
-    version='0.0.2',
+    version='0.0.3',
     author='babjo',
     url='https://github.com/babjo/aiogmailsender',
     description='Asynchronous Gmail Client',
