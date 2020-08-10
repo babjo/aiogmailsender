@@ -14,8 +14,8 @@ Quickstart
     import aiogmailsender
 
     async def arun():
-        sender = await aiogmailsender.create('<gmailusername>',
-                                             '<gamilpassword>',
+        sender = await aiogmailsender.create([('<gmailusername1>', '<gamilpassword1>'),
+                                              ('<gmailusername2>', '<gamilpassword2>')],
                                              rate_limit=60, # How many emails sender sends within a minute
                                              pool_size=2, # How many clients are kept in pool
                                              retry=5, # How many times sender retries to send a message, when sending fails
